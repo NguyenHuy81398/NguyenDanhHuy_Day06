@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/tempmax_min"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="-4dp"
+                android:id="@+id/img_max"
+                android:src="@drawable/temp_max"
+                android:layout_width="25dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:layout_toRightOf="@+id/img_max"
+                android:id="@+id/tvTemp_max"
+                android:textSize="30dp"
+                android:text="30"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_toRightOf="@+id/tvTemp_max"
+                android:id="@+id/t_max"
+                android:textColor="@color/black"
+                android:layout_marginTop="2dp"
+                android:text="o"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_toRightOf="@+id/t_max"
+                android:text="C"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="-4dp"
+                android:id="@+id/img_min"
+                android:src="@drawable/temp_min"
+                android:layout_width="25dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:layout_toRightOf="@+id/img_min"
+                android:id="@+id/tvTemp_min"
+                android:textSize="30dp"
+                android:text="30"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_toRightOf="@+id/tvTemp_min"
+                android:id="@+id/t_min"
+                android:textColor="@color/black"
+                android:layout_marginTop="2dp"
+                android:text="o"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_toRightOf="@+id/t_min"
+                android:text="C"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="-25dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_cloud"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <RelativeLayout
+        android:id="@+id/weather"
+        android:layout_below="@+id/icon"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTemp"
+            android:text="26"
+            android:textSize="120dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_toRightOf="@+id/tvTemp"
+            android:id="@+id/temp"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:text="o"
+            android:textSize="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_toRightOf="@+id/temp"
+            android:text="C"
+            android:textSize="120dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tempmax_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@drawable/icon_wind"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvPressure"
+            android:text="100"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/icon_doam"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvHumidity"
+            android:text="100"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
